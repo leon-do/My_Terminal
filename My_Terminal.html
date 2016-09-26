@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	html{
+		overflow-x:hidden; /* hides the horizontal scroll bar */
+	}
+	body{
+		background-color: #282C34;
+	}
+	#txt{
+		font-family:Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+		color: #ABB2BF;
+		resize:none;
+		width:100%;
+		height: 90vh;
+		overflow:auto; 			/* scroll */
+		margin-bottom: 5px;
+	}
+	#input{
+		font-family:Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+		width:99%;
+		outline:none;
+	}
+	.red{
+		color : #D76971;
+	}
+	.blue{
+		color : #61AFD1;
+	}
+	.green{
+		color : #98C379;
+	}	
+	
+</style>
+</head>
+
+
+<body>
+	<div id=txt autofocus>Type <span class=green>'start' </span> in the text field at the bottom.</div>
+	<input type=text id=input autofocus placeholder="start">
+</body>
+
+</html>
+
+<script>
+// ================================ variables
+var name; //words entered in text field
+
+
+
+// ================================ get enter button to work
+document.getElementById("input")
+	.addEventListener("keyup", function(event){
+	event.preventDefault();
+	if (event.keyCode == 13){
+		name = document.getElementById("input").value;	
+		//alert("Enter button works");
+		potato(name);
+		document.getElementById("txt").scrollTop += 9000;  // It's over 9000! scroll to bottom
+	}
+});
+
+
+// ================================ function meat and potatos
+function potato(name){
+	if (name.toLowerCase() == "start"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + start;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "clear"){
+		document.getElementById("txt").innerHTML = "Type <a class=green>'start'</a> in the text field at the bottom.";
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "files"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + files;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "born.exe"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + bornExe;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "born"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + born;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "selfworth1.lol"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + SelfWorth1Lol;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "selfworth1"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + selfworth1;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "money0"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + money0;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "job0"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + job0;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "relationship0"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + relationship0;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "support0"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + support0;
+		document.getElementById("input").value = "";
+	
+	} else if (name.toLowerCase() == "left"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + left;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "self1"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + self1;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "selfworth2.lol"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + SelfWorth2Lol;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "jobs1"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + jobs1;
+		document.getElementById("input").value = "";
+	
+	} else if (name.toLowerCase() == "money1"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + money1;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "relationships1"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + relationships1;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "all"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + all;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "support1"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + support1;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "self4"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + self4;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "selfworth2"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + selfworth2;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "selfworth3.lol"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + SelfWorth3Lol;
+		document.getElementById("input").value = "";
+	
+	} else if (name.toLowerCase() == "jobs99"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + jobs99;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "money99"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + money99;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "relationships99"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + relationships99;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "support99"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + support99;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "self0"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + self0;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "1946"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + _1946;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "hesse"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + hesse;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "rabbit"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + rabbit;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "sure"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + sure;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "yes"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + yes;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "no"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + no;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "selfworth3"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + selfworth3;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "improve.now"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + improveNow;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "7500000000"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + _7500000000;
+		document.getElementById("input").value = "";
+	
+	} else if (name.toLowerCase() == "better"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + better;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "best"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + best;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "go"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + go;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "cards"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + cards;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "chasing.goals"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + chasingGoals;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "alive"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + alive;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "my_goals"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + my_goals;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "next"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + next;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "goals"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + goals;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "ice"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + ice;
+		document.getElementById("input").value = "";
+	
+	} else if (name.toLowerCase() == "blue"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + blue;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "compare.us"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + compareUS;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "happy"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + happy;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "competitors"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + competitors;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "inferior"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + inferior;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "superior"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + superior;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "equal.ity"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + equality;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "sue"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + sue;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "characters"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + characters;
+		document.getElementById("input").value = "";
+
+	} else if (name.toLowerCase() == "string"){
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + string;
+		document.getElementById("input").value = "";
+
+	} else {
+		document.getElementById("txt").innerHTML = document.getElementById("txt").innerHTML + "<br>" + "command not found <br>";
+		document.getElementById("input").value = "";
+	}
+}
+
+
+// ================================ Green text (commands)
+var start ="<br> You are in. <br> <br>\
+Here are some commands to start: <br>\
+<b class=green> clear </b> - to clear the screen. <br>\
+<b class=green> files </b> - to get the list of files <br>\
+<b class=green> ____ </b>  - type any colored text to get more information. (example: type <a class=green>files</a>) <br>"
+
+
+
+// ================================ blue text (files)
+var files ="\
+(In the box white below, type: <a class=blue>Born.exe</a>)<br>\
+<a class=blue> Born.exe </a> <br>\
+<a class=blue> SelfWorth1.lol </a> <br>\
+<a class=blue> SelfWorth2.lol </a> <br>\
+<a class=blue> SelfWorth3.lol </a> <br>\
+<a class=blue> Improve.now </a> <br>\
+<a class=blue> Chasing.Goals </a> <br>\
+<a class=blue> Compare.us </a> <br>\
+<a class=blue> Equal.ity </a> <br>";
+
+var bornExe ="\
+type: <a class=red>born</a> <br>\
+#include <a class=red> born </a> <br>"
+
+var SelfWorth1Lol = "\
+int SelfWorth-1(void){ <br>\
+int <a class=red>job0</a> = 0; <br>\
+int <a class=red>money0</a> = 0; <br>\
+int <a class=red>relationship0</a> = 0; <br>\
+int <a class=red>support0</a> = 0; <br>\
+int <a class=red>self1</a> = 1 <br>\
+int <a class=red>SelfWorth1</a> = (money + skills + jobs + familysupport ) / (self); <br>\
+} <br> \
+// type anything in red <br>";
+
+var SelfWorth2Lol = '\
+int SelfWorth-2(void){ <br>\
+printf  ("Enter number of jobs: "); <br>\
+int <a class=red> jobs1 </a> = GetInt(); <br>\
+printf ("Enter number of money: "); <br>\
+int <a class=red> money1 </a> = GetInt(); <br>\
+printf ("Enter number of relationships: "); <br>\
+int <a class=red> relationships1 </a> = GetInt(); <br>\
+printf ("Enter number of support: "); <br>\
+int <a class=red> support1 </a> = GetInt(); <br>\
+printf ("Enter number of self: "); <br>\
+int <a class=red> self4 </a> = GetInt(); <br>\
+int <a class=red>SelfWorth2</a> = (money1 + job1 + relationships1 + support1) / (self4); <br>\
+printf ("%i",<a class=red>SelfWorth2</a>);<br>\
+} <br>';
+
+var SelfWorth3Lol = "\
+int SelfWorth-3(void){ <br>\
+int <a class=red>jobs99</a> = 99; <br>\
+int <a class=red>money99</a> = 99; <br>\
+int <a class=red>relationships99</a> = 99; <br>\
+int <a class=red>support99</a> = 99; <br>\
+int <a class=red>self0</a> = 0 <br>\
+int <a class=red>SelfWorth3</a> = (money + skills + jobs + familysupport ) / (self); <br>\
+int SelfWorth3 = Not Defined <br>\
+} <br>";
+
+var improveNow = " \
+int improve-1(void){ <br>\
+    int r = rand() % (<a class=red>7500000000</a>);<br>\
+    printf ('%i',r); <br>\
+        while (r < <a class=red>7500000000</a>) <br>\
+    { <br>\
+        printf('Get <a class=red>better</a>'); <br>\
+        r = r + 1; <br>\
+    } <br>\
+    printf('You are the <a class=red>best</a>!'); <br>\
+    printf('You are not longer the <a class=red>best</a>.'); <br>\
+} <br>";
+
+var chasingGoals = " \
+int main(void){ <br>\
+    int <a class=red>my_goals</a> = 1; <br>\
+    int <a class=red>goals</a> = 99; <br>\
+    bool alive = true; <br>\
+    while (<a class=red>alive</a> == true) { <br>\
+        if (my_goals == 0){ <br>\
+            printf ('I have 0 <a class=red>goals</a>. What now?'); <br>\
+        } else if (my_goals < <a class=red>goals</a>) { <br>\
+            printf ('I'm chasing my <a class=red>goals</a>'); <br>\
+            my_goals =  my_goals + 1; <br>\
+        } <br>\
+    	else if(my_goals == <a class=red>goals</a>) { <br>\
+            printf ('I've achevied my goal...'); <br>\
+            printf ('What's <a class=red>next</a>?'); <br>\
+            <a class=red>goals</a> = <a class=red>goals</a> + 1; <br>\
+    	} <br>\
+    } <br>\
+}<br>"
+
+var compareUS = "int main(void){ <br>\
+  int me; <br>\
+  int you; <br>\
+string <a class=red>happy</a>; <br>\
+  you = rand() % 10; <br>\
+  me = rand() % 10; <br>\
+  if (me == you){ <br>\
+   printf('I am %i',me); <br>\
+   printf('You are %i',you); <br>\
+   printf('We are <a class=red>competitors</a>'); <br>\
+Me != <a class=red>happy</a>; <br>\
+  } else if (me < you) { <br>\
+   printf('I am %i',me); <br>\
+   printf('You are %i',you); <br>\
+   printf('I am <a class=red>inferior</a>'); <br>\
+Me != <a class=red>happy</a>; <br>\
+  } else if (me > you) <br>\
+   printf('I am %i',me); <br>\
+   printf('You are %i',you); <br>\
+   printf('I am <a class=red>superior</a>'); <br>\
+Me != <a class=red>happy</a>; <br>\
+  } <br>"
+
+var equality = "int main(void){ <br>\
+  <a class=red>string</a> me = 'me'; <br>\
+  <a class=red>string</a> you = 'you'; <br>\
+    if(strcmp(me, you)  != 0) { <br>\
+        printf('We're two different <a class=red>characters</a>'); <br>\
+    } else { <br>\
+        printf('We're the same'); <br>\
+    } <br>\
+}"
+// ================================ red text (definitions)
+var born = "Demian was born in the 90's. That's what he's been told. It just happened. This contains his genetic makeup. Something he has no control over. It was written for him whether he likes it or not.\
+<br>He never had the chance to explain why. It's impossible because he must be born to decide if he wants to be born.\
+<br>Being born is already a paradox. Try typing: <a class=blue>SelfWorth1.lol</a><br>";
+
+var selfworth1 = "Demian has no money, got fired, lost his relationships and has no support system. He just has myself. And his self worth is zero. carpe damn. <br>";
+
+var money0 = "Money can't buy happiness, but it can buy food, water, shelter and a computer to type this crap out. You can call Demian pessimistic. <br>";
+
+var job0 = "'I <3 my job', said <3% of the population. Good news: Demian is not a statistician. <br>";
+
+var relationship0 = "Demian's heart has four chambers. Two atria and two ventricles. 3 out of 4 of his chambers are broken. How many chambers does he have <a class=red>left</a>?<br>";
+
+var left = "Really? 1 <a class=red>left</a> ventricle. He's heartbroken...<br>";
+
+var support0 = "For emotional support, refer to friends and family. For technical support, refer to the owner's manual. For philosophical crisis support, refer to someone who likes talking about the weather, because that's an <a class=red>all</a> meaningful conversation. <br>";
+
+var self1 = "According to <a class=blue>SelfWorth1.lol</a> (version 1), it's all about Me, Me, Me, I, I, I. <br>";
+
+var jobs1 = "Demian was looking for a job and then he found a job. Now he's trying to find a job that he's happy with. But at least he has <a class=red>money1<a>... <br>";
+
+var money1 = "Money can't buy happiness, but it can buy food, water and shelter to find better opportunities. That's if he's motivated. <br>";
+
+var relationships1 = "Demian is in 1 relationship. Not really. The 1 is a placeholder. He's rounding up. He rounds up <a class=red>all</a> of the time. You can call him optimistic. <br>";
+
+var all = "He's being a sarcastic little prick. Even though he can't control being born, he can surely control his cheeky thoughts. right? <br>";
+
+var support1 = "Make peace with your family. Join a club. Find a hobby. Get out more. Reconnect with your old friends. Make new friends. Because the number of 'likes' is proportional to the number of support. <br> ";
+
+var self4 = "Demian has divided himself into a worker, a money collector, an (rounded up) boyfriend and a supported person, butt the more he quantifies his self worth, the more he feels divided. <br>"
+
+var selfworth2 = "Demian starting rebuilding what he lost. Adding up his jobs, money, relationships, support, etc. then dividing it by his self, will always be less than his expectations. That's why he is constantly chasing. So why should he constantly chase after something he'll never obtain? (Hint: <a class=blue>SelfWorth3.lol</a>)<br>"
+
+var jobs99 = "After many changes, Demian found a cheeky career coding <a class=red>all</a> crap. Even if he's not getting paid. <br>"
+
+var money99 = "Demian has enough money to do what he wants to do and say what he wants to say. <br>"
+
+var relationships99 = "Demian had 99 relationships. Not really. He's still working on that. He just likes rounding up a lot. You can call him optimistic. <br>"
+		
+var support99 = "Demian got 99 supporters, but a female canine ain't one. He should probably get 100 supporters by adopting a three legged half dog, half wolf and name it Steppenwolf. He likes round numbers. It's difficult to combine Jay-Z references with math and a <a class=red>1946</a> Nobel Prize laureate in literature. <br>";
+
+var _1946 = "Hermann <a class=red>Hesse</a> wrote Steppenwolf and Demian. <br>"
+
+var hesse = "how far down the <a class=red>rabbit</a> hole do you want to go? <br>"
+
+var rabbit = "you <a class=red>sure</a>? <br>";
+
+var sure = "last chance: <a class=red>yes</a> or <a class=red>no</a><br>"
+
+var yes = "you <a class=red>sure</a>? <br>"
+
+var no = "Good, because it's an endless cycle. Now where were we? <br>"
+
+var self0 = "I'm not <em>a</em> coder. I just code. <br> I'm not <em>a</em> thinker. I just think. <br> I'm not <em>a</em> (variable x)+'er'. I just (variable x). <br> I'm not <em>a</em> cooler. I'm just cool. <br> Note: This formula doesn't always work. <br>";
+
+var selfworth3 = "'When I take 'me' out of the equation, my self worth is no longer defined.' <br>";
+
+var _7500000000 = "Why 7,500,000,000? Because there are approximatly 7.5 billion humans in the world. Good luck being #1. <br>";
+
+var better = "As soon as Demian stopped improving, he was no longer the best. What if he doesn't want to be the best? What if he's content with <a class=blue>Chasing.Goals</a> <br>";
+
+var best = "'As soon as you're > 7.5 billion, you'll be the best until they come out with new holographic cards. Will this ever end?! No, it will just <a class=red>GO</a> on forever.' <br>"
+
+var go = "Go as in, Pokemon GO. <br>";
+
+var cards = "This is referring to the Pokemon theme song. Lyrics: 'I want to be the very best.'<br>"
+
+var alive = "As long as Demian is alive this will continue. <br>"
+
+var my_goals = "A checklist. A bucketlist. A to-do list. A reason to get out of bed list. It can range from 0 (no list), to &infin; .Approximately <br>";
+
+var next = "What's next? Setting bigger <a class=red>goals</a>. <br>";
+
+var goals = "He's been dreamin' and chasin', tryin' and lying', crying' and rhymin'. Continuin' yo, because the world will pass on bye once he stops. <br> That's fine until he relizes the world won't stop to look back. <a class=blue>Ice</a>. <br>";
+
+var ice = "Ice is blue because Demian has the blues and because dence ice absorbs every color except <a class=blue>blue</a>. <a class=blue>Blue</a> waves be scattering in his retina. <br>";
+
+var blue = "Blue has a wavelength of approximately 475 nm. Let's get back on track. <br>";
+
+var happy = "Top 10 Things That Makes Demian Happy (draft): <br>\
+1. <br>\
+2.<br>\
+3.<br>\
+4.<br>\
+5.<br>\
+6.<br>\
+7.<br>\
+8.<br>\
+9.<br>\
+10.<br>\
+<br>";
+
+var competitors = "\
+Competitors: <br>\
+&darr; Drives prices down. <br>\
+&uarr; Increases productivity. <br>\
+&darr; Breaks businesses <br>\
+&uarr; Builds companies <br>\
+&darr; Defeat <br>\
+&uarr; Victory <br>\
+&#8645; Duality. Bro <br>";
+
+var inferior = "'Inferior. Really? Can you find a more condescending word? You better change your attitude. If Demian had a tail, it would go between his legs, up his chest and smack him in the face.' <br>";
+
+var superior = "If me > you, then I'm superior. <br>\
+This can be easily quantifiable my having a scoring system: <br>\
+Example: If <a class=red>Sue</a> Doe scores a 40% on the test and Demian scores a 95%. <br>\
+Then Demian am superior. <br>\
+If the score is the likelihood of feeling inferior. <br>\
+Then Demian is superior at feeling inferior - Take that duality!<br>\
+Bad jokes aside, Demian started to look at <em>comparing</em> differently. <a class=blue>Equal.ity</a> <br>";
+
+var sue = "Sue married Mr. Doe and adopted a dog named Pseudo (Pluto's twin). (not a real story. neither is the dog. neither is the planet &#128293) <br>";
+
+var string = "1. A string is thread twisted together to form a thin length. 2. In computer science, a string is a sequence of <a class=red>characters</a>. <br>"
+
+var characters = "Demian lives in a quantifiable world but it does not mean he's quantifiable. He can see himself as a string. A sequence of <a class=red>characters</a>. 'I', 'Me', 'You' and 'Demian' are not the same. If we are not the same, how can we <a class=blue>Compare.Us</a>? I'm .comfused. <br>"
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
